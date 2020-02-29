@@ -1,0 +1,78 @@
+=>Len	:Returns the length of the given string.
+	Ex:	
+		Len(String)
+		Dim var1 as Variant
+		var1 ="Microsoft VBScript"
+		msgbox("Length of var1 is : " & Len(var1))
+
+=>Replace	:Returns a string after replacing a string with another string.
+	Ex:
+		Replace(string,find,replacewith[,start[,count[,compare]]]) 
+		Dim var as Variant
+		var = "This is VBScript Programming"
+		'VB to be replaced by vb'
+		msgbox("Line 2: " & Replace(var,"VB","vb"))
+
+=>Trim	:Returns a string value after removing both the leading and the trailing blank spaces.
+	Ex: 
+		var = "Microsoft VBScript"
+		var =       "            Microsoft VBScript           "
+		msgbox ("After Trim : " & Trim(var))
+
+
+=>Ltrim	:Returns a string after removing the spaces on the left side of the specified string.
+
+=>Rtrim	:Returns a string after removing the spaces on the right side of the specified string.
+
+=>Lcase :Returns the lower case of the specified string.		 
+	Ex:
+	   var = "Microsoft VBScript"
+       msgbox("Line 1 : " & LCase(var))
+	   
+=>Ucase :Returns the upper case of the specified string.	   
+	Ex:	   
+	   var = "Microsoft VBScript"
+       msgbox("Line 1 : " & UCase(var))
+=>Left :Returns a specific number of characters from the left side of the string.
+	Ex:
+		Left(String, Length)
+		var = "Microsoft VBScript"
+        msgbox("Line 1 : " & Left(var,2))
+	
+=>Right :Returns a specific number of characters from the right side of the string.	
+	Ex:
+		Right(String, Length)
+		var = "Microsoft VBScript"
+        msgbox("Line 1 : " & Right(var,2))	
+		
+=>Mid :Returns a specific number of characters from a string based on the specified parameters.
+
+=> InStr([start,]string1,string2[,compare])
+	Start − An optional parameter
+	String1 − A required parameter. String to be searched.
+	String2 − A required parameter. String against which String1 is searched.
+	Compare − An optional parameter.
+	0 = vbBinaryCompare
+	1 = vbTextCompare
+	Ex:
+		Dim Var As Variant 
+        Var = "Microsoft VBScript" 
+        MsgBox ("Line 1 : " & InStr(1, Var, "s"))
+	
+=>InStrRev(string1,string2[,start,[compare]])	
+    Ex:
+		Dim Var As Variant 
+		Var = "Microsoft VBScript" 
+][=-		 msgbox("Line 1 : " & InStrRev(var,"s",10))
+		 
+
+=>Space	:Fills a string with the specified number of spaces.
+
+=>StrComp	:Returns an integer value after comparing the two specified strings.
+	Ex:	
+		 msgbox("Line 1 :" & StrComp("Microsoft","Microsoft"))
+		 
+=>String	:Returns a string with a specified character for specified number of times.
+	Ex:
+		msgbox("Line 1 :" & String(3,"$"))
+=>StrReverse	:Returns a string after reversing the sequence of the characters of the given string.
